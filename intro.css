@@ -1,0 +1,98 @@
+:root {
+  --primary: #78c841;
+  --secondary: #b4e50d;
+  --tertary: #ff9b2f;
+  --muted: #fb4141;
+  --text: #34699a;
+}
+h3 {
+  color: #1a7980;
+}
+
+#cv-name {
+  color: #465c88;
+  text-align: center; /* chỉnh cho id tên cv_name ra giữa */
+}
+
+#apply-role {
+  color: #d92c54;
+}
+#home-address {
+  color: #ff7a30;
+}
+#sex {
+  color: #a3dc9a;
+}
+#work-in {
+  color: #d92c9f;
+}
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 0 30px;
+}
+ul,
+ol {
+  list-style-type: none;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Noto Serif", serif;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+* /*Áp dụng cho tất cả trong file htmlhtml */ {
+  box-sizing: border-box; /*giúp phần tử cha giữ nguyên kích thước khi phần tử con thay đổi*/
+  font-family: "Noto Serif", serif;
+}
+
+/*cach1*/
+/* cach1.1 */
+.education-achievement .education-name {
+  font-style: italic;
+}
+.education-achievement .education-uni {
+  font-weight: bold;
+}
+/*cach1.2*/
+.education-achievement span:first-child {
+  font-style: italic;
+}
+.education-achievement span:last-child {
+  font-weight: bold;
+}
+#basic-info {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+#cv-constraint {
+  display: flex;
+  flex-direction: column;
+}
+h3 {
+  color: var(--primary);
+  border-bottom: var(--tertary) 2px solid;
+  padding-bottom: 5px;
+}
+p {
+  text-align: justify;
+}
+#basic-info * {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#basic-info span {
+  font-size: medium;
+  font-weight: bold;
+}
