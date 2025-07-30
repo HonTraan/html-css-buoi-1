@@ -1,98 +1,85 @@
 :root {
-  --primary: #78c841;
-  --secondary: #b4e50d;
-  --tertary: #ff9b2f;
-  --muted: #fb4141;
-  --text: #34699a;
-}
-h3 {
-  color: #1a7980;
-}
-
-#cv-name {
-  color: #465c88;
-  text-align: center; /* chỉnh cho id tên cv_name ra giữa */
-}
-
-#apply-role {
-  color: #d92c54;
-}
-#home-address {
-  color: #ff7a30;
-}
-#sex {
-  color: #a3dc9a;
-}
-#work-in {
-  color: #d92c9f;
+  --primary: #d92c54;
+  --secondary: #932f67;
+  --tertiary: #dddeab;
+  --muted: #8abb6c;
+  --text: #954c2e;
 }
 body {
   margin: 0;
   width: 100vw;
   height: 100vh;
-  padding: 0 30px;
+  padding: 0 50px;
+}
+/* Cách đổi màu */
+/* Cách 1 */
+/* h2 {
+  color: #d92c54;
+} */
+h2 {
+  margin: 10;
+  color: var(--primary);
+  border-bottom: var(--muted) 2px solid;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+}
+
+h1 {
+  color: var(--text);
+}
+/* cách 2 đổi phông chữ */
+.education-item .education-name {
+  font-style: italic; /* đổi sang chữ nghiêng */
+}
+.education-item .education-uni {
+  font-weight: bold; /*đổi độ đậm cho chữ */
+}
+#cv-name {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+#basic-info {
+  margin: 0 auto; /* Căn giữa toàn bộ khối */
+  display: flex; /* Kích hoạt Flexbox để sắp xếp nội dung ngang */
+  flex-wrap: wrap; /* Cho phép các dòng tự động xuống hàng */
+  gap: 10px; /* Tạo khoảng cách giữa các thông tin liên lạc */
+  justify-content: center; /* Căn giữa các phần tử con theo chiều ngang */
+  align-items: center; /* Căn giữa các phần tử con theo chiều dọc */
+  padding: 0 100px; /* Chừa khoảng cách hai bên khối */
+}
+* {
+  box-sizing: border-box; /* Tính kích thước phần tử bao gồm cả padding và border */
+  font-family: "Times New Roman", Times, serif; /* Chọn font chung cho toàn trang */
 }
 ul,
 ol {
   list-style-type: none;
   padding: 0;
-}
-* {
-  box-sizing: border-box;
-  font-family: "Noto Serif", serif;
-}
-h1,
-h2,
-h3,
-h4 {
   margin: 0;
 }
-* /*Áp dụng cho tất cả trong file htmlhtml */ {
-  box-sizing: border-box; /*giúp phần tử cha giữ nguyên kích thước khi phần tử con thay đổi*/
-  font-family: "Noto Serif", serif;
-}
-
-/*cach1*/
-/* cach1.1 */
-.education-achievement .education-name {
-  font-style: italic;
-}
-.education-achievement .education-uni {
-  font-weight: bold;
-}
-/*cach1.2*/
-.education-achievement span:first-child {
-  font-style: italic;
-}
-.education-achievement span:last-child {
-  font-weight: bold;
-}
-#basic-info {
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-}
-#cv-constraint {
-  display: flex;
-  flex-direction: column;
-}
-h3 {
-  color: var(--primary);
-  border-bottom: var(--tertary) 2px solid;
-  padding-bottom: 5px;
-}
-p {
-  text-align: justify;
+li {
+  margin: 5px;
 }
 #basic-info * {
   display: flex;
   align-items: center;
-  gap: 10px;
 }
-#basic-info span {
-  font-size: medium;
-  font-weight: bold;
+#basic-info a {
+  text-decoration: none;
+  color: var(--primary);
+}
+#basic-info p {
+  color: var(--primary);
+}
+p {
+  text-align: justify;
+}
+#cv-container {
+  display: flex;
+  flex-direction: column;
 }
